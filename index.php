@@ -23,8 +23,8 @@
                 Mise à jour PHP <?= $_modif_php ?> <br>
             </p>
         <!-- end -->
-        <!-- structure d'affichage pour les articles -->
         
+        <!-- structure d'affichage pour les articles -->
     <?php
         include_once "./src/connect.inc.php";
     ?>
