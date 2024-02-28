@@ -44,6 +44,6 @@
         <?= $_date_php ?>
         </time></p>
     </footer>
-   
+   <!-- https://github.com/giusmili/template-articles-web.git -->
 </body>
 </html>

@@ -1,2 +1,3 @@
-# template : publier des articles 
-> By Militello Giuseppe - 2022 
+# 🚀 Template : publier des articles dans le style blog 
+
+> By Militello Giuseppe - 2024
