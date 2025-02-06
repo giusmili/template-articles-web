@@ -1,17 +1,6 @@
 <?php
     
-    try{
-        $_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-        $_bdd = new PDO('mysql:host=localhost;
-        dbname=posts', 
-        'root', '',
-        array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',$_pdo_options));
-
-    }
-    catch(Exception $e)
-        {
-            die('Erreur s\'est produite: '.$e->getMessage());
-    }
+    include_once "./src/connect_bdd.inc.php";
 
 //tester nos variables
 if(isset($_POST["titre"]) || isset($_POST['contenu'])){

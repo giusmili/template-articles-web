@@ -90,8 +90,10 @@ nav ul{
     list-style: none;
     padding: 1rem 0;
 }
-nav ul li{
-    text-align: center;
+nav{
+    ul li{
+        text-align: center;
+    } 
 }
 article{
     margin-bottom: 1rem;
@@ -129,10 +131,18 @@ article h2{
     margin: inherit;
    
 }
-article h2 a{
-    color: inherit;
-    text-shadow: -.1rem -.1rem .1rem #222;
-}
+article{
+    & h2{
+    
+       & a{
+            color: inherit;
+            text-shadow: -.1rem -.1rem .1rem #222;
+        }
+        
+    } 
+
+} 
+
 article p{
     color: #fff;
     background-color: var(--color-secondary);
