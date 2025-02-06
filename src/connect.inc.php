@@ -1,7 +1,5 @@
 <!--itération avec la bdd -->
-<?php
-    include_once "connect_bdd.inc.php";
-?>
+
 <?php foreach($_response as $_article):?> <!--itération avec la bdd -->
     <article>
         <h2>

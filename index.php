@@ -1,7 +1,9 @@
 <!-- header -->
 <?php
-    include_once "./src/header.inc.php";
+    include_once __DIR__ ."/src/header.inc.php";
+    include_once __DIR__ ."/src/connect_bdd.inc.php";
 ?>
+
 <body>
     <header>
         <h1><?= title ?></h1>
@@ -26,7 +28,7 @@
         <!-- structure d'affichage pour les articles -->
         
     <?php
-        include_once "./src/connect.inc.php";
+        include_once __DIR__."/src/connect.inc.php";
     ?>
    <!--end -->
     <nav>
@@ -34,8 +36,6 @@
             Rechercher les articles
         </a>
      
-      
-
     </nav>
     </main>
     <footer>

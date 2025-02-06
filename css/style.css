@@ -29,7 +29,7 @@ a{
     display: inline-block;
     vertical-align: -.3rem;
     margin: 0 1rem;
-    user-select: none;
+    
  }
  img{
     display: inline-block;
@@ -138,7 +138,7 @@ article p{
     background-color: var(--color-secondary);
     padding: .5rem;
     margin: inherit;
-    user-select: none; /* pas d'édition du texte*/
+    /* user-select: none; */ /* pas d'édition du texte*/
 }
 article time{
     color: #fff;

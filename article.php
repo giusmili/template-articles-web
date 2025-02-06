@@ -1,6 +1,6 @@
 <?php
-    include_once "./src/header.inc.php";
-    include_once "./src/connect_bdd.inc.php";
+    include_once __DIR__."./src/header.inc.php";
+    include_once __DIR__."./src/connect_bdd.inc.php";
     print "\n<body>"
 ?>
 
@@ -15,11 +15,13 @@
         </p>
         <!-- test de la requete -->
         <?php
+
             if(!isset($_GET["id"]) || empty($_GET["id"])){
                 //response
                 header("Location: article.php");
                 exit;
             }
+            
             //get id
             $_id = $_GET["id"];
             $_sql = "SELECT * FROM `post` WHERE `id` = :id"; /* cela sélectionne le nombre de lignes à partir de la clé */
@@ -34,7 +36,7 @@
             //verify article
             if(!$_article){
                 http_response_code(404);
-                print "Article not found!";
+                print '<p class="warning">Article not found!</p>';
                 exit;
             }
         ?>
@@ -42,7 +44,7 @@
             <h2>
                 <?= strip_tags($_article['titre'])?>
                 <!-- numéro de l'article -->
-                <?= " article numéro ".$_article['id']?>
+              
             </h2>
             <p>
                 <?= $_article['contenu']?>
