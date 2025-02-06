@@ -6,6 +6,8 @@ body{
     font: 1.6rem sans-serif;
     background-color: #222;
     color: #fff;
+    letter-spacing: .1rem;
+
 }
 *{
     box-sizing: border-box;
@@ -143,6 +145,7 @@ article time{
 }
 
 /* formulaire */
+
 .form fieldset legend{
     font-size: x-large;
     padding-bottom: 1rem;
