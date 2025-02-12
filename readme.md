@@ -1,4 +1,4 @@
-# template : publier des articles
+# Publier des articles
 
 # 💻 Portfolio Articles
 
