@@ -9,12 +9,15 @@
     
 <main>
 <?php
-    //connexion à la bdd
+    // connexion à la bdd
     $bdd = new PDO('mysql:host=localhost;dbname=posts;charset=utf8','root','');
     $_article = $bdd->query('SELECT titre, contenu, date_modification FROM post ORDER BY id ASC LIMIT 1');
-    //tester la recherche
+
+    // tester la recherche
     if(isset($_GET['query']) AND !empty($_GET['query'])){
+        
         $_query = htmlspecialchars($_GET['query']);
+        
         $_article = $bdd->query('SELECT titre, contenu, date_modification FROM post WHERE titre LIKE "%'.$_query.'%" ORDER BY id DESC');
         
     }
